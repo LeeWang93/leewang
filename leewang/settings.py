@@ -65,7 +65,8 @@ ROOT_URLCONF = 'leewang.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templats')
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
