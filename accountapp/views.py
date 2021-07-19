@@ -14,7 +14,7 @@ def hello_world(request):
         new_hello_world = HelloWorld()
         new_hello_world.text = temp
         new_hello_world.save()
-        
+
         return HttpResponseRedirect(reverse('accountapp:hello_world'))
 
     else:
