@@ -1,20 +1,20 @@
 .leewang_logo{
-font-family: 'Lobster', cursive;
-margin-top:1rem;
+    font-family: 'Lobster', cursive;
+    margin-top:1rem;
 }
 
 
 
-.leewang_footer_button {
-font-size:.6rem;
+.leewang_footer_button{
+    font-size: .9rem;
 }
 
 .leewang_footer{
-text-align:center;
-margin-top:2rem;
+    text-align:center;
+    margin-top:2rem;
 }
 
 .leewang_header{
-text-align:center;
-margin : 2rem 0;
+    text-align:center;
+    margin : 2rem 0;
 }
