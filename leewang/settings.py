@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accountapp',
     'bootstrap4',
-    'profileapp'
+    'profileapp',
+    'articleapp'
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR,'templats'),
                  os.path.join(BASE_DIR,'accountapp/templats'),
-                 os.path.join(BASE_DIR,'profileapp/templats')
+                 os.path.join(BASE_DIR,'profileapp/templats'),
+                 os.path.join(BASE_DIR,'articleapp/templats')
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
