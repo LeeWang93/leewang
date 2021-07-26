@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'accountapp',
     'bootstrap4',
     'profileapp',
-    'articleapp'
+    'articleapp',
+    'commentapp',
 ]
 
 MIDDLEWARE = [
@@ -73,7 +74,8 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR,'templats'),
                  os.path.join(BASE_DIR,'accountapp/templats'),
                  os.path.join(BASE_DIR,'profileapp/templats'),
-                 os.path.join(BASE_DIR,'articleapp/templats')
+                 os.path.join(BASE_DIR,'articleapp/templats'),
+                 os.path.join(BASE_DIR,'commentapp/templats'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
