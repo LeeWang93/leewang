@@ -21,11 +21,11 @@
 </style>
 
 
-  {% if article_list %}
+  {% if project_list %}
     <div class="container">
-      {% for article in article_list %}
-      <a href="{% url 'articleapp:detail' pk=article.pk %}">
-        {% include 'snippets/card.html' with article=article %}
+      {% for project in project_list %}
+      <a href="{% url 'projectapp:detail' pk=project.pk">
+        {% include 'snippets/card.html' with project=project %}
       </a>
       {% endfor %}
     </div>
@@ -34,7 +34,7 @@
 
 
     <div class="text-center">
-      <h1>No Articles Yet!</h1>
+      <h1>No Project Yet!</h1>
     </div>
   {% endif %}
 
@@ -43,8 +43,8 @@
 
   <script src="{% static 'js/magicgrid.js' %}"></script>
   <div style="text-align:center">
-    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col-3 bt-3 mt-3 ">
-      Create Article
+    <a href="{% url 'projectapp:create' %}" class="btn btn-dark rounded-pill col-3 bt-3 mt-3 ">
+      Create Project
     </a>
   </div>
 
