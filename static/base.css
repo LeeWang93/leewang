@@ -3,13 +3,9 @@
     margin-top:1rem;
 }
 
-
-
 .leewang_footer_button{
 
     font-size: .9rem;
-
-
 }
 
 .leewang_footer{
@@ -28,20 +24,19 @@
     }
 }
 
-
 a {
     color: black;
     text-decoration: none
 }
 
 a:hover{
-    color: gray;
+    color: grey;
     text-decoration: none;
 }
 
 
 .leewang_header_nav {
-    margin: 0 .3rem;
+    margin: 0 .5rem;
 }
 
 .leewang_header_nav_bar{

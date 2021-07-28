@@ -1,7 +1,7 @@
 {% load static %}
 
 <div class="leewang_header">
-    <a href="{% url 'accountapp:hello_world' %}">
+    <a href="{% url 'articleapp:list' %}">
         <div>
         <h1 class = 'leewang_logo'>LeeWang</h1>
         </div>
@@ -27,11 +27,12 @@
             </a>
 
             {% else %}
-            <a href="{% url 'accountapp:detail' pk=user.pk %}">
+            <a href="{% url 'accountapp:detail' pk=user.pk %}" class="leewang_header_nav">
                 <span>MyPage</span>
             </a>
-            <a href="{% url 'accountapp:logout' %}?next={{request.path}}">
-                <span>logout</span>
+
+            <a href="{% url 'accountapp:logout' %}?next={{ request.path }}" class="leewang_header_nav">
+                <span>Logout</span>
             </a>
             {% endif %}
         </div>
