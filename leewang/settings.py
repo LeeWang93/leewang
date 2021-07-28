@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'articleapp',
     'commentapp',
     'projectapp',
+    'subscribeapp',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +79,7 @@ TEMPLATES = [
                  os.path.join(BASE_DIR,'articleapp/templats'),
                  os.path.join(BASE_DIR,'commentapp/templats'),
                  os.path.join(BASE_DIR,'projectapp/templats'),
+                 os.path.join(BASE_DIR,'subscribeapp/templats'),
                  ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -3,9 +3,22 @@
 {% block content %}
 
 <style>
+  .container{
+  padding:0;
+  margin:0,auto;
+
+  }
+
+
+  .container a {
+    width:45%;
+    max-width:250px;
+
+  }
+
+
+
   .container div {
-    width: 250px;
-    background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +56,7 @@
 
   <script src="{% static 'js/magicgrid.js' %}"></script>
   <div style="text-align:center">
-    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col-3 bt-3 mt-3 ">
+    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill px-3 bt-3 mt-3 ">
       Create Article
     </a>
   </div>
