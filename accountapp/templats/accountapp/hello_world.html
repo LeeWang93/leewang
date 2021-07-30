@@ -4,8 +4,15 @@
 
     <div style="text-align:center; border-radius : 1rem; margin:2rem;">
         <h1 style="font-family:Lobster,cursive;">
-            Hello World list
         </h1>
+
+        <h1>
+            {{ target_user.profile.pk }}
+        </h1>
+        <h2>
+
+            {{user.pk}}
+        </h2>
 
         <form action="/accountapp/hello_world/" method="post">
             {% csrf_token %}
