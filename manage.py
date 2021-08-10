@@ -8,7 +8,7 @@ from django.contrib.staticfiles.management.commands import runserver
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'leewang.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'leewang.settings.local')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
